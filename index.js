@@ -46,7 +46,6 @@ async function run() {
         $set: task,
       };
       const result = await taskCollection.updateOne(filter, updateDoc, options);
-      console.log(result);
       res.send(`done`);
     });
 
